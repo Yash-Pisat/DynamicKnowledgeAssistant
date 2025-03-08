@@ -26,7 +26,7 @@ PostgreSQL with PgVector 🗃️
 
 Gemini Embedder ✨
 
-Docker (Optional) 🐳
+Docker 🐳
 
 # 🚧 Setup Instructions
 
