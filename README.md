@@ -39,14 +39,16 @@ Docker Desktop
 # ⚙️ Installation
 
 Clone the Repository
-
+```
 git clone https://github.com/yourusername/DynamicKnowledgeAssistant.git
 cd DynamicKnowledgeAssistant
+```
 
 Create a Virtual Environment
-
+```
 python -m venv venv
 source venv/bin/activate  # On Windows use: venv\Scripts\activate
+```
 
 Install Dependencies
 
@@ -55,11 +57,14 @@ pip install -r requirements.txt
 Setup Environment Variables
 Create a .env file with the following variables:
 
+```
 GROQ_API_KEY=your_groq_api_key
 GOOGLE_API_KEY=your_google_api_key
 DB_URL=postgresql+psycopg://ai:ai@localhost:5532/ai
+```
 
 🐳 Docker Desktop Setup (Bash Terminal)
+```
 docker run -d \
   -e POSTGRES_DB=ai \
   -e POSTGRES_USER=ai \
@@ -69,10 +74,12 @@ docker run -d \
   -p 5532:5432 \
   --name pgvector \
   phidata/pgvector:16
+```
 
 Run the Application
+```
 streamlit run app.py
-
+```
 
 # 💡 Usage
 
